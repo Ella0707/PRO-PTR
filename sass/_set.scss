@@ -35,6 +35,9 @@ ul li {
   -webkit-text-size-adjust: 100%; /* 2 */
 }
 
+body.lock {
+  overflow: hidden;
+}
 /* Sections
    ========================================================================== */
 

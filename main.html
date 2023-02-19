@@ -20,7 +20,7 @@
         </a>
         <div class="header__contacts">
           <a href="tel:89660483829" class="header__tel">8 966 048-38-29</a>
-          <button class="header__tel-btn">Обратный звонок</button>
+          <button class="header__tel-btn popup__link">Обратный звонок</button>
         </div>
         <div class="header__info">По будням с 9:00 до 18:00
           Домодедовское шоссе, д. 20
@@ -34,7 +34,7 @@
       <div class="container">
         <div class="banner__inner">
           <h1 class="banner__title"><span>Надёжный поставщик вторичных</span>
-            гранул и&nbsp;дроблёных полимеров для производства в&nbsp;Москве
+            гранул и&nbsp;дроблёных полимеров для&nbsp;производства в&nbsp;Москве
           </h1>
           <div class="banner__info">
             <ul class="banner__list">
@@ -76,40 +76,53 @@
             <img src="./img/volume1.webp" alt="гранула">
             <div class="volume__item-info">
               <h2 class="volume__item-title">150</h2>
-              <p class="volume__item-subtitle">тонна/месяц</p>
-              <p class="volume__item-par">Гранула вторичная пвд</p>
+              <div class="volume__item-pars">
+                <p class="volume__item-subtitle">тонна/мес</p>
+                <p class="volume__item-par">Гранула вторичная ПВД</p>
+              </div>
             </div>
           </div>
           <div class="volume__item">
             <img src="./img/volume2.webp" alt="гранула">
             <div class="volume__item-info">
-              <h2 class="volume__item-title">150</h2>
-              <p class="volume__item-subtitle">тонна/месяц</p>
-              <p class="volume__item-par">Гранула вторичная пвд</p>
+              <h2 class="volume__item-title">180</h2>
+              <div class="volume__item-pars">
+                <p class="volume__item-subtitle">тонна/мес</p>
+                <p class="volume__item-par">Гранула вторичная ПНД</p>
+              </div>
+
             </div>
           </div>
           <div class="volume__item">
             <img src="./img/volume3.webp" alt="гранула">
             <div class="volume__item-info">
-              <h2 class="volume__item-title">150</h2>
-              <p class="volume__item-subtitle">тонна/месяц</p>
-              <p class="volume__item-par">Гранула вторичная пвд</p>
+              <h2 class="volume__item-title">230</h2>
+              <div class="volume__item-pars">
+                <p class="volume__item-subtitle">тонна/мес</p>
+                <p class="volume__item-par">Гранула вторичная ПП</p>
+              </div>
+
             </div>
           </div>
           <div class="volume__item">
             <img src="./img/volume4.webp" alt="гранула">
             <div class="volume__item-info">
-              <h2 class="volume__item-title">150</h2>
-              <p class="volume__item-subtitle">тонна/месяц</p>
-              <p class="volume__item-par">Гранула вторичная пвд</p>
+              <h2 class="volume__item-title">120</h2>
+              <div class="volume__item-pars">
+                <p class="volume__item-subtitle">тонна/мес</p>
+                <p class="volume__item-par">Гранула дробленая ПВД</p>
+              </div>
+
             </div>
           </div>
           <div class="volume__item">
             <img src="./img/volume5.webp" alt="гранула">
             <div class="volume__item-info">
-              <h2 class="volume__item-title">150</h2>
-              <p class="volume__item-subtitle">тонна/месяц</p>
-              <p class="volume__item-par">Гранула вторичная пвд</p>
+              <h2 class="volume__item-title">170</h2>
+              <div class="volume__item-pars">
+                <p class="volume__item-subtitle">тонна/мес</p>
+                <p class="volume__item-par">Гранула дробленая ПНД</p>
+              </div>
             </div>
           </div>
         </div>
@@ -122,6 +135,37 @@
     <div class="container">
     </div>
   </footer>
+
+
+  <!-- popup -->
+  <div class="popup">
+    <div class="popup__body">
+        <div class="popup__content">
+            <button class="popup__close">
+                <img class="popup__close-img" src="./img/close.svg" alt="">
+            </button>
+
+            <div class="popup__title">обратный звонок</div>
+            <div class="popup__subtitle">Оставьте контакты и мы перезвоним в течение 15 минут</div>
+
+            <form class="popup__form-wrap">
+                <label class="popup__form-item" for="">
+                    <input class="popup__form-input" type="text" placeholder="Представьтесь, пожалуйста" name="name">
+                </label>
+                <label class="popup__form-item" for="">
+                  <input class="popup__form-input" type="tel" placeholder="Номер телефона" name="name">
+                </label>
+                <label class="popup__form-checkbox">
+                    <input type="checkbox">
+                    <span class="checkbox-style"></span>
+                    Согласен с условиями пользовательского соглашения
+                </label>
+                <button type="submit" class="popup__btn">Отправить заявку</button>
+            </form>
+        </div>
+    </div>
+</div>
+
 
 
 

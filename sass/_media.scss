@@ -14,9 +14,13 @@
     }
 
     &__info {
-      width: 215px;
+      width: 225px;
       font-size: 15px;
       line-height: 19.5px;
+    }
+
+    &__contacts {
+      padding-left: 0;
     }
   }
 
@@ -38,6 +42,16 @@
       position: relative;
       width: 428px;
       height: 408px;
+    }
+  }
+
+  .volume {
+    padding: 80px 0 80px 0;
+    &__title {
+      margin-bottom: 30px;
+      span {
+        color: $accentColor;
+      }
     }
   }
 }
@@ -71,6 +85,8 @@
 
     &__title {
       width: 100%;
+      font-size: 48px;
+      line-height: 63px;
       margin-bottom: 30px;
     }
 
@@ -96,10 +112,54 @@
       top: auto;
     }
   }
+
+  .volume {
+    padding: 60px 0 60px 0;
+
+    &__title {
+      font-size: 48px;
+      line-height: 63px;
+    }
+    &__items {
+      grid-template-columns: 1fr;
+      gap: 10px;
+    }
+    &__item {
+      flex-direction: row;
+      img {
+        width: 100px;
+        height: 100px;
+        margin-bottom: 0px;
+        margin-right: 25px;
+      }
+
+      &:not(:last-child) {
+        &::before {
+          content: none;
+        }
+      }
+    }
+    &__item-info {
+      display: flex;
+      align-items: center;
+      text-align: left;
+    }
+    &__item-title {
+      font-size: 48px;
+      line-height: 63px;
+      margin-bottom: 0px;
+      margin-right: 20px;
+    }
+
+    &__item-par {
+      width: 100%;
+      margin: 0;
+    }
+  }
 }
 
 
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 760px) {
   .container {
     width: 100%;
     padding: 0 20px;
@@ -116,7 +176,7 @@
     }
 
     &__tel {
-      font-size: 16px;
+      font-size: 20px;
       margin-right: 10px;
     }
     &__tel-btn {
@@ -132,7 +192,7 @@
     }
 
     &__title {
-      padding: 0 20px;
+      padding: 0 19px;
       font-size: 32px;
       line-height: 42px;
     }
@@ -140,6 +200,10 @@
     &__list {
       padding: 0 20px;
     }
+
+    &__list-item p {
+      line-height: 18px;
+  }
 
     &__video-wrap {
       position: relative;
@@ -153,6 +217,13 @@
       bottom: 40px;
       left: 40px;
       top: auto;
+    }
+  }
+
+  .volume {
+    &__title {
+      font-size: 32px;
+      line-height: 42px;
     }
   }
 }
@@ -180,8 +251,8 @@
     }
 
     &__tel {
-      font-size: 14px;
-      margin-right: 7px;
+      font-size: 17px;
+      margin-right: 16px;
     }
   }
 
@@ -189,7 +260,7 @@
 
     &__title {
       font-size: 28px;
-      line-height: 36px;
+      line-height: 36.7px;
     }
 
     &__video-wrap {
@@ -209,6 +280,7 @@
     &__list-item {
       h2 {
         font-size: 20px;
+        line-height: 26.2px;
         margin-bottom: 10px;
       }
       p {
@@ -218,6 +290,27 @@
       &:not(:last-child) {
         margin-bottom: 20px;
       }
+    }
+  }
+
+  .volume {
+    .container {
+      padding: 0 17px 0 20px;
+    }
+
+    &__title {
+      font-size: 28px;
+      line-height: 36px;
+      margin-bottom: 30px;
+    }
+
+    &__items {
+      gap: 20px;
+    }
+
+    &__item-par {
+      font-size: 15px;
+      line-height: 18px;
     }
   }
 }

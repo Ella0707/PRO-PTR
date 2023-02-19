@@ -1,3 +1,14 @@
+// открытие формы и закрытие
+$('.popup__link').click(function (e) {
+  e.preventDefault();
+  $('.popup').fadeIn(800);
+  $('body').addClass('lock');
+});
+
+$('.popup__close').click(function () {
+  $('.popup').fadeOut(800);
+  $('body').removeClass('lock');
+});
 
 // воспроизведение видео в секции about на главной странице
 
@@ -28,3 +39,6 @@ function videoPlay() {
     videoAbout.controls = false;
   }
 }
+
+
+
