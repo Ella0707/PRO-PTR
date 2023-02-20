@@ -1,44 +1,58 @@
 // открытие формы и закрытие
-$('.popup__link').click(function (e) {
+$(".popup__link").click(function (e) {
   e.preventDefault();
-  $('.popup').fadeIn(800);
-  $('body').addClass('lock');
+  $(".popup").fadeIn(800);
+  $("body").addClass("lock");
 });
 
-$('.popup__close').click(function () {
-  $('.popup').fadeOut(800);
-  $('body').removeClass('lock');
+$(".popup__close").click(function () {
+  $(".popup").fadeOut(800);
+  $("body").removeClass("lock");
 });
 
 // воспроизведение видео в секции about на главной странице
 
-let videoAbout = document.querySelector('.banner__video');
-let videoBtn = document.querySelector('.banner__video-btn');
+let videoAbout = document.querySelector(".banner__video");
+let videoBtn = document.querySelector(".banner__video-btn");
 
-videoBtn.addEventListener('click', function() {
+videoBtn.addEventListener("click", function () {
   videoPlay();
 });
-videoAbout.addEventListener('click', function() {
+videoAbout.addEventListener("click", function () {
   videoPlay();
 });
 
 function videoPlay() {
-  videoAbout.classList.toggle('active');
+  videoAbout.classList.toggle("active");
 
-  if (videoAbout.classList.contains('active')) {
+  if (videoAbout.classList.contains("active")) {
     videoAbout.play();
     videoAbout.muted = false;
     // videoAbout.controls = true;
-    videoBtn.style = 'display: none';
+    videoBtn.style = "display: none";
     // header.classList.add('hide');
-  }
-  else {
+  } else {
     videoAbout.pause();
-    videoBtn.style = 'display: block';
+    videoBtn.style = "display: block";
     videoAbout.muted = true;
     videoAbout.controls = false;
   }
 }
 
+//sliders
 
+const casesSwiper = new Swiper(".cases__slider", {
+  slidesPerView: 1,
+  spaceBetween: 0,
+  speed: 800,
 
+  navigation: {
+    prevEl: ".cases__slide-prev",
+    nextEl: ".cases__slide-next",
+  },
+
+  effect: "fade",
+  fadeEffect: {
+    crossFade: true,
+  },
+});
