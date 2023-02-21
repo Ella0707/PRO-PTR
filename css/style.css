@@ -4,6 +4,7 @@
   src: local("Apex"), local("Apex"), url("./../fonts/Apex-Bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
+  font-display: swap;
 }
 @font-face {
   font-family: "Inter";
@@ -33,7 +34,7 @@
 }
 
 html {
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -370,7 +371,7 @@ template {
 }
 
 .title {
-  font-family: "Apex";
+  font-family: "Apex", sans-serif;
   font-size: 64px;
   line-height: 84px;
   margin-bottom: 50px;
@@ -443,7 +444,7 @@ template {
   padding-left: 27px;
 }
 .header__tel {
-  font-family: "Apex";
+  font-family: "Apex", sans-serif;
   font-size: 32px;
   color: #34384E;
   text-decoration: none;
@@ -477,7 +478,7 @@ template {
 }
 .banner__title {
   width: 85%;
-  font-family: "Apex";
+  font-family: "Apex", sans-serif;
   font-size: 64px;
   line-height: 84px;
   margin-bottom: 50px;
@@ -512,7 +513,7 @@ template {
   left: 0;
 }
 .banner__list-item h2 {
-  font-family: "Apex";
+  font-family: "Apex", sans-serif;
   font-size: 24px;
   line-height: 31.5px;
   margin-bottom: 10px;
@@ -594,13 +595,13 @@ template {
   text-align: center;
 }
 .volume__item-title {
-  font-family: "Apex";
+  font-family: "Apex", sans-serif;
   font-size: 64px;
   line-height: 84px;
   margin-bottom: 9px;
 }
 .volume__item-subtitle {
-  font-family: "Apex";
+  font-family: "Apex", sans-serif;
   font-size: 20px;
   line-height: 26px;
   margin-bottom: 9px;
@@ -671,7 +672,7 @@ template {
   background: #F5F6F8;
 }
 .products__item-title {
-  font-family: "Apex";
+  font-family: "Apex", sans-serif;
   font-size: 20px;
   line-height: 26px;
   padding-bottom: 10px;
@@ -747,7 +748,7 @@ template {
   width: 784px;
 }
 .production__item-title {
-  font-family: "Apex";
+  font-family: "Apex", sans-serif;
   font-size: 32px;
   line-height: 42px;
   padding-bottom: 20px;
@@ -798,7 +799,7 @@ template {
 }
 .production__list-item h3 {
   width: 252px;
-  font-family: "Apex";
+  font-family: "Apex", sans-serif;
   font-size: 20px;
   line-height: 26px;
   margin: 0 20px 0 0;
@@ -846,7 +847,7 @@ template {
   object-fit: contain;
 }
 .work__item-title {
-  font-family: "Apex";
+  font-family: "Apex", sans-serif;
   font-size: 24px;
   line-height: 31px;
   margin-bottom: 10px;
@@ -916,19 +917,6 @@ template {
   padding: 40px;
   display: flex;
   justify-content: space-between;
-  position: relative;
-}
-.cases__img {
-  position: absolute;
-  top: 33px;
-  right: 40px;
-  width: 28px;
-  height: 24px;
-}
-.cases__img img {
-  height: 100%;
-  width: 100%;
-  object-fit: contain;
 }
 .cases__text-items {
   width: 50%;
@@ -944,16 +932,17 @@ template {
   margin-bottom: 10px;
 }
 .cases__value {
-  font-family: "Apex";
+  font-family: "Apex", sans-serif;
   font-size: 24px;
   line-height: 31px;
   line-height: 30px;
 }
 .cases__par {
   padding-top: 30px;
+  position: relative;
 }
 .cases__par h3 {
-  font-family: "Apex";
+  font-family: "Apex", sans-serif;
   font-size: 24px;
   line-height: 31px;
   margin: 0px 0px 20px 0px;
@@ -961,6 +950,71 @@ template {
 .cases__par p {
   font-size: 17px;
   line-height: 20.7px;
+  font-weight: 300;
+}
+.cases__img {
+  position: absolute;
+  top: 33px;
+  right: 40px;
+  width: 28px;
+  height: 24px;
+}
+.cases__img img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.trust {
+  padding: 90px 0 100px 0;
+}
+.trust__top {
+  display: flex;
+  padding-bottom: 40px;
+  margin-bottom: 40px;
+  position: relative;
+}
+.trust__top::before {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background: #34384E;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.trust__title-block {
+  width: 289px;
+  display: flex;
+  flex-direction: column;
+  margin-right: 60px;
+}
+.trust__slide-arrow {
+  display: flex;
+  margin-top: auto;
+}
+.trust__slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.trust__advantages {
+  width: 905px;
+  margin-left: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px 20px;
+  align-self: end;
+}
+.trust__advantages-item h2 {
+  font-family: "Apex";
+  font-size: 24px;
+  line-height: 32px;
+  margin-bottom: 10px;
+}
+.trust__advantages-item p {
+  font-size: 17px;
+  line-height: 22px;
   font-weight: 300;
 }
 
@@ -1003,7 +1057,7 @@ template {
   object-fit: contain;
 }
 .popup__title {
-  font-family: "Apex";
+  font-family: "Apex", sans-serif;
   font-size: 32px;
   margin-bottom: 20px;
 }
@@ -1182,6 +1236,34 @@ template {
   .work__title {
     margin-bottom: 30px;
   }
+  .cases {
+    padding: 80px 0 100px 0;
+  }
+  .cases__title {
+    margin-bottom: 30px;
+  }
+  .cases__company {
+    height: 135px;
+    padding: 16px;
+    align-items: start;
+  }
+  .cases__slide-text {
+    padding: 22px;
+  }
+  .cases__img {
+    top: 13px;
+    right: 20px;
+  }
+  .trust {
+    padding: 60px 0;
+  }
+  .trust__slide {
+    height: 420px;
+  }
+  .trust__advantages {
+    width: 100%;
+    margin: 0;
+  }
 }
 @media screen and (max-width: 980px) {
   .container {
@@ -1342,6 +1424,65 @@ template {
     grid-column-end: 3;
     align-self: start;
   }
+  .cases {
+    padding: 60px 0 60px 0;
+  }
+  .cases__title {
+    font-size: 48px;
+    line-height: 63px;
+  }
+  .cases__slider-slide {
+    flex-direction: column;
+  }
+  .cases__slide-about {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    margin-bottom: 20px;
+    margin-right: 0;
+  }
+  .cases__slide-arrow {
+    margin: 0;
+  }
+  .cases__company {
+    width: 604px;
+    height: 134px;
+    padding: 16px;
+    align-items: start;
+  }
+  .cases__slide-text {
+    padding: 22px;
+  }
+  .cases__img {
+    top: 13px;
+    right: 20px;
+  }
+  .trust__top {
+    flex-direction: column;
+  }
+  .trust__title {
+    font-size: 48px;
+    line-height: 63px;
+    margin-bottom: 0;
+  }
+  .trust__title-block {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  .trust__slide {
+    height: 330px;
+  }
+  .trust__slide-arrow {
+    margin-top: 0;
+  }
+  .trust__slider {
+    width: 100%;
+  }
 }
 @media screen and (max-width: 760px) {
   .container {
@@ -1449,6 +1590,71 @@ template {
     margin-bottom: 10px;
   }
   .work__item-subtitle {
+    font-size: 15px;
+    line-height: 19px;
+  }
+  .cases__title {
+    font-size: 32px;
+    line-height: 42px;
+  }
+  .cases__company {
+    width: 317px;
+    padding: 20px;
+  }
+  .cases__slide-text {
+    padding: 22px;
+    flex-direction: column;
+  }
+  .cases__text-items {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .cases__item:not(:last-child) {
+    margin-bottom: 21px;
+  }
+  .cases__value {
+    font-size: 20px;
+    line-height: 26px;
+  }
+  .cases__img {
+    top: 13px;
+    right: 20px;
+  }
+  .cases__par {
+    padding-top: 0;
+  }
+  .cases__par h3 {
+    font-size: 20px;
+    line-height: 26px;
+  }
+  .cases__par p {
+    font-size: 15px;
+    line-height: 18px;
+  }
+  .cases__img {
+    top: -7px;
+    right: -2px;
+  }
+  .trust {
+    padding: 50px 0 60px 0;
+  }
+  .trust__title {
+    font-size: 32px;
+    line-height: 42px;
+  }
+  .trust__top {
+    margin-bottom: 30px;
+  }
+  .trust__advantages {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .trust__advantages-item h2 {
+    font-size: 20px;
+    line-height: 26px;
+    margin-bottom: 10px;
+  }
+  .trust__advantages-item p {
     font-size: 15px;
     line-height: 19px;
   }
@@ -1572,5 +1778,55 @@ template {
   .work__item-subtitle {
     font-size: 15px;
     line-height: 19px;
+  }
+  .cases__title {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  .cases__company {
+    width: 252px;
+  }
+  .cases__slide-arrow {
+    flex-direction: column;
+  }
+  .cases__slide-prev {
+    margin-right: 0;
+  }
+  .cases__slide-text {
+    padding: 22px;
+    flex-direction: column;
+  }
+  .cases__text-items {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .cases__item:not(:last-child) {
+    margin-bottom: 21px;
+  }
+  .cases__value {
+    font-size: 20px;
+    line-height: 26px;
+  }
+  .cases__img {
+    top: 13px;
+    right: 20px;
+  }
+  .cases__par {
+    padding-top: 0;
+  }
+  .cases__par h3 {
+    font-size: 20px;
+    line-height: 26px;
+  }
+  .cases__par p {
+    font-size: 15px;
+    line-height: 18px;
+  }
+  .cases__img {
+    top: -7px;
+    right: -2px;
+  }
+  .trust__slide {
+    height: 230px;
   }
 }/*# sourceMappingURL=style.css.map */

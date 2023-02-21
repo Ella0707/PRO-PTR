@@ -45,6 +45,7 @@ const casesSwiper = new Swiper(".cases__slider", {
   slidesPerView: 1,
   spaceBetween: 0,
   speed: 800,
+  loop: true,
 
   navigation: {
     prevEl: ".cases__slide-prev",
@@ -55,4 +56,28 @@ const casesSwiper = new Swiper(".cases__slider", {
   fadeEffect: {
     crossFade: true,
   },
+});
+
+const trustSwiper = new Swiper(".trust__slider", {
+  slidesPerView: 2,
+  spaceBetween: 20,
+  speed: 800,
+  loop: true,
+
+  navigation: {
+    prevEl: ".trust__slide-prev",
+    nextEl: ".trust__slide-next",
+  },
+
+  breakpoints: {
+    481: {
+      slidesPerView: 3,
+    },
+    768: {
+      slidesPerView: 2,
+    },
+    1001: {
+      slidesPerView: 3,
+    }
+}
 });

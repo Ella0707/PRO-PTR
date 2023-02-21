@@ -647,21 +647,6 @@
     padding: 40px;
     display: flex;
     justify-content: space-between;
-    position: relative;
-  }
-
-  &__img {
-    position: absolute;
-    top: 33px;
-    right: 40px;
-    width: 28px;
-    height: 24px;
-
-    img {
-      height: 100%;
-      width: 100%;
-      object-fit: contain;
-    }
   }
 
   &__text-items {
@@ -692,6 +677,7 @@
 
   &__par {
     padding-top: 30px;
+    position: relative;
 
     h3 {
       font-family: 'Apex', sans-serif;
@@ -707,7 +693,84 @@
     }
   }
 
+  &__img {
+    position: absolute;
+    top: 33px;
+    right: 40px;
+    width: 28px;
+    height: 24px;
+
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: contain;
+    }
+  }
 }
+
+.trust {
+  padding: 90px 0 100px 0;
+
+  &__top {
+    display: flex;
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+    position: relative;
+
+    &::before {
+      content: '';
+      width: 100%;
+      height: 1px;
+      background: $basicColor;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+  }
+  &__title-block {
+    width: 289px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 60px;
+  }
+
+  &__slide-arrow {
+  display: flex;
+  margin-top: auto;
+  }
+
+  &__slide {
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  &__advantages {
+    width: 905px;
+    margin-left: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px 20px;
+    align-self: end;
+  }
+
+  &__advantages-item {
+    h2 {
+      font-family: 'Apex';
+      font-size: 24px;
+      line-height: 32px;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 17px;
+      line-height: 22px;
+      font-weight: 300;
+    }
+  }
+}
+
 
 
 
