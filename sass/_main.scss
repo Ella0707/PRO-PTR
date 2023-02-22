@@ -771,6 +771,248 @@
   }
 }
 
+.delivery {
+  background:  #F5F6F8;
+  padding: 100px 0 95px;
+
+  &__inner {
+    padding-bottom: 496px;
+    position: relative;
+  }
+
+  &__map {
+    width: 1024px;
+    height: 607px;
+    object-fit: contain;
+    position: absolute;
+    bottom: 0;
+    right: 48px;
+  }
+
+  &__title-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+  }
+  &__title {
+    width: 837px;
+    margin-right: 90px;
+    margin-bottom: 0;
+  }
+  &__subtitle {
+    width: 286px;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 300;
+  }
+  &__list {
+    display: grid;
+    grid-template-columns: 289px 289px;
+    gap: 18px 20px;
+  }
+  &__list-item {
+    padding-left: 37px;
+    position: relative;
+    font-family: 'Apex';
+    font-size: 24px;
+    line-height: 31px;
+
+    &::before {
+      content: '';
+      width: 24px;
+      height: 24px;
+      background: url(./../img/done-icon.svg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-color: $accentColor;
+
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 0;
+    }
+  }
+}
+
+.feedback {
+
+  .container {
+    width: 1468px;
+  }
+
+  &__inner {
+    background: #1F243E;
+    padding: 60px 127px 80px 127px;
+  }
+  &__form {
+  
+  }
+  &__items {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 26px;
+  }
+  &__item {
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+
+    &:nth-child(1),
+    &:nth-child(2) {
+      width: 288px;
+    }
+
+    &:nth-child(3) {
+      flex-grow: 1;
+    }
+  }
+  &__item-title {
+    font-size: 12px;
+    line-height: 15px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+  }
+  &__label {
+    height: 60px;
+    input {
+      height: 100%;
+      width: 100%;
+      padding: 16px 18px 20px 20px;
+      border: 1px solid #FFFFFF;
+      background: transparent;
+      font-size: 24px;
+      line-height: 20px;
+      color: $basicColor;
+      transition: .5s;
+      cursor: pointer;
+
+      &::placeholder {
+        font-size: 24px;
+        line-height: 20px;
+        color: rgba(225, 225, 225, 0.33);
+      }
+
+      &:focus,
+      &:active {
+        background: #fff;
+        outline: none;
+        // border: none;
+
+        &::placeholder {
+          font-size: 24px;
+          line-height: 20px;
+          color: $basicColor;
+          opacity: .5;
+        }
+      }
+    }
+  }
+  &__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 30px;
+    height: 58px;
+    background: $accentColor;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: .4s;
+
+    &:hover {
+      background: #FA2867;
+    }
+  }
+  
+}
+
+.faq {
+  padding: 100px 0;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__title {
+    width: 231px;
+  }
+
+  &__spoller {
+   width: 904px;
+  }
+  &__spoller-item {
+    border: 2px solid #fff;
+    transition: .6s;
+
+    &:not(:last-child) {
+      margin-bottom: 2px;
+    }
+
+    &.active {
+      border: 2px solid $accentColor;
+    }
+  }
+  &__spoller-title-wrap {
+    padding: 16px 20px 24px 23px;
+    background: #F5F6F8;
+    border: 2px solid transparent;
+    border-bottom: transparent;
+    display: flex;
+    cursor: pointer;
+    transition: .6s;
+
+    svg {
+      flex-shrink: 0;
+      margin-right: 20px;
+      stroke: $accentColor;
+      width: 12px;
+      height: 12px;
+      transition: .6s;
+    }
+
+    &.active {
+      background: #fff;
+
+      svg {
+        stroke: $basicColor;
+        transform: rotate3d(1, -1, 0, 180deg);
+      }
+    }
+  }
+  &__spoller-title {
+    padding-left: 20px;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 300;
+    position: relative;
+
+    &:before {
+      content: '';
+      height: 100%;
+      width: 1px;
+      background: $basicColor;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+  }
+  &__spoller-text {
+    padding: 14px 20px 20px 27px;
+    font-size: 17px;
+    line-height: 22px;
+    font-weight: 400;
+    background: #fff;
+    margin-top: -3px;
+    display: none;
+  }
+}
+
+
+
 
 
 
@@ -938,5 +1180,10 @@
     font-size: 15px;
     font-weight: 700;
     text-transform: uppercase;
+    transition: .4s;
+
+    &:hover {
+      background: #FA2867;
+    }
   }
 }

@@ -78,6 +78,18 @@ const trustSwiper = new Swiper(".trust__slider", {
     },
     1001: {
       slidesPerView: 3,
-    }
-}
+    },
+  },
+});
+
+
+
+// spoller 
+$(document).ready(function () {
+  $('.faq__spoller-item').click(function (event) {
+    $(this).toggleClass('active');
+});
+  $('.faq__spoller-title-wrap').click(function (event) {
+      $(this).toggleClass('active').next().slideToggle(300);
+  });
 });
